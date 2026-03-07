@@ -1,9 +1,11 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="min-h-screen bg-white font-sans text-slate-900">
       <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur">
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 py-4 sm:px-6">
-          <a
+          <Link
             href="/"
             className="flex items-center gap-2 font-semibold tracking-tight"
             aria-label="HVACThermal Home"
@@ -18,37 +20,40 @@ export default function Home() {
             <span className="text-lg" style={{ color: "#1E3A5F" }}>
               HVACThermal
             </span>
-          </a>
+          </Link>
 
           <nav className="hidden items-center gap-6 text-sm font-medium sm:flex">
-            <a
+            <Link
               href="#calculators"
               className="text-slate-700 hover:text-slate-900"
             >
               Calculators
-            </a>
-            <a
+            </Link>
+            <Link
               href="#features"
               className="text-slate-700 hover:text-slate-900"
             >
               Features
-            </a>
-            <a href="#about" className="text-slate-700 hover:text-slate-900">
+            </Link>
+            <Link href="#about" className="text-slate-700 hover:text-slate-900">
               About
-            </a>
-            <a href="#support" className="text-slate-700 hover:text-slate-900">
+            </Link>
+            <a
+              href="mailto:support@hvacthermal.com"
+              className="text-slate-700 hover:text-slate-900"
+            >
               Support
             </a>
           </nav>
 
           <div className="flex items-center gap-3">
-            <a
-              href="#calculators"
+            <Link
+              href="/calculator/btu-calculator"
               className="inline-flex items-center justify-center rounded-full px-4 py-2 text-sm font-semibold text-white shadow-sm transition-colors"
               style={{ backgroundColor: "#E67E22" }}
             >
               Start Calculating
-            </a>
+            </Link>
           </div>
         </div>
       </header>
@@ -91,20 +96,20 @@ export default function Home() {
               </p>
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-                <a
+                <Link
                   href="#calculators"
                   className="inline-flex w-full items-center justify-center rounded-full px-5 py-3 text-sm font-semibold text-white shadow-sm transition-colors sm:w-auto"
                   style={{ backgroundColor: "#E67E22" }}
                 >
                   Browse calculators
-                </a>
-                <a
+                </Link>
+                <Link
                   href="#features"
                   className="inline-flex w-full items-center justify-center rounded-full border px-5 py-3 text-sm font-semibold text-white/95 transition-colors hover:bg-white/10 sm:w-auto"
                   style={{ borderColor: "rgba(255,255,255,0.6)" }}
                 >
                   Why HVACThermal
-                </a>
+                </Link>
               </div>
 
               <div className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-3">
@@ -148,7 +153,7 @@ export default function Home() {
               {
                 title: "BTU Calculator",
                 desc: "Estimate cooling and heating load based on room size, insulation, and usage.",
-                href: "#",
+                href: "/calculator/btu-calculator",
                 icon: (
                   <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
                     <path
@@ -169,7 +174,7 @@ export default function Home() {
               {
                 title: "Boiler Size Calculator",
                 desc: "Size a boiler for efficient comfort with clear outputs for kW and BTU/hr.",
-                href: "#",
+                href: "/calculator/boiler-size-calculator",
                 icon: (
                   <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
                     <path
@@ -190,7 +195,7 @@ export default function Home() {
               {
                 title: "Heat Pump Size Calculator",
                 desc: "Get a practical starting point for heat pump sizing with climate-aware inputs.",
-                href: "#",
+                href: "/calculator/heat-pump-size-calculator",
                 icon: (
                   <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
                     <path
@@ -239,13 +244,13 @@ export default function Home() {
                 </h3>
                 <p className="mt-2 text-sm leading-6 text-slate-600">{card.desc}</p>
                 <div className="mt-5">
-                  <a
+                  <Link
                     href={card.href}
                     className="inline-flex w-full items-center justify-center rounded-xl px-4 py-3 text-sm font-semibold text-white transition-colors"
                     style={{ backgroundColor: "#E67E22" }}
                   >
                     Calculate Now
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -337,19 +342,28 @@ export default function Home() {
               </p>
               <ul className="mt-3 space-y-2 text-sm text-slate-600">
                 <li>
-                  <a className="hover:text-slate-900" href="#calculators">
+                  <Link
+                    className="hover:text-slate-900"
+                    href="/calculator/btu-calculator"
+                  >
                     BTU Calculator
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="hover:text-slate-900" href="#calculators">
+                  <Link
+                    className="hover:text-slate-900"
+                    href="/calculator/boiler-size-calculator"
+                  >
                     Boiler Size Calculator
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="hover:text-slate-900" href="#calculators">
+                  <Link
+                    className="hover:text-slate-900"
+                    href="/calculator/heat-pump-size-calculator"
+                  >
                     Heat Pump Size Calculator
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -360,14 +374,14 @@ export default function Home() {
               </p>
               <ul className="mt-3 space-y-2 text-sm text-slate-600">
                 <li>
-                  <a className="hover:text-slate-900" href="#features">
+                  <Link className="hover:text-slate-900" href="#features">
                     Features
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="hover:text-slate-900" href="#about">
+                  <Link className="hover:text-slate-900" href="#about">
                     About
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -381,7 +395,7 @@ export default function Home() {
                 shape the tools.
               </p>
               <a
-                href="#"
+                href="mailto:support@hvacthermal.com"
                 className="mt-4 inline-flex items-center justify-center rounded-full px-4 py-2 text-sm font-semibold text-white"
                 style={{ backgroundColor: "#E67E22" }}
               >
@@ -392,10 +406,6 @@ export default function Home() {
 
           <div className="mt-10 flex flex-col gap-3 border-t border-slate-200 pt-6 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between">
             <p>© {new Date().getFullYear()} HVACThermal.com. All rights reserved.</p>
-            <p>
-              Navy <span className="font-semibold">#1E3A5F</span> • Accent{" "}
-              <span className="font-semibold">#E67E22</span>
-            </p>
           </div>
         </div>
       </footer>
