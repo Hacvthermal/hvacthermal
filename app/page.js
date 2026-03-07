@@ -24,7 +24,7 @@ export default function Home() {
 
           <nav className="hidden items-center gap-6 text-sm font-medium sm:flex">
             <Link
-              href="#calculators"
+              href="/#calculators"
               className="text-slate-700 hover:text-slate-900"
             >
               Calculators
@@ -97,7 +97,7 @@ export default function Home() {
 
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
                 <Link
-                  href="#calculators"
+                  href="/#calculators"
                   className="inline-flex w-full items-center justify-center rounded-full px-5 py-3 text-sm font-semibold text-white shadow-sm transition-colors sm:w-auto"
                   style={{ backgroundColor: "#E67E22" }}
                 >
@@ -135,7 +135,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="calculators" className="mx-auto w-full max-w-6xl px-4 py-14 sm:px-6">
+        <section
+          id="calculators"
+          className="mx-auto w-full max-w-6xl px-4 py-14 sm:px-6 scroll-mt-24"
+        >
           <div className="flex items-end justify-between gap-6">
             <div className="max-w-2xl">
               <h2 className="text-2xl font-bold tracking-tight" style={{ color: "#1E3A5F" }}>
