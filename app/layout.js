@@ -6,6 +6,9 @@ export const metadata = {
   title: "HVACThermal – Free HVAC Calculators",
   description:
     "Free, professional-grade HVAC calculators for BTU sizing, boiler sizing, and heat pump sizing.",
+  verification: {
+    google: "vxROZwlviRjOHbJhZRnnfYsRtCkKsSZdR4jpFNfIYGw",
+  },
 };
 
 export default function RootLayout({ children }) {
