@@ -359,6 +359,81 @@ export default function Home() {
                   </svg>
                 ),
               },
+              {
+                title: "What Size Air Conditioner Do I Need?",
+                desc: "Find the right BTU or kW rating for your room. Covers window units, split systems and central AC.",
+                href: "/guides/what-size-air-conditioner-do-i-need",
+                icon: (
+                  <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+                    <path
+                      d="M12 2a7 7 0 0 0-7 7c0 2.1 1.1 4.1 2.8 5.4.9.7 1.2 1.2 1.2 2.1V19a3 3 0 0 0 6 0v-2.5c0-.9.3-1.4 1.2-2.1A6.9 6.9 0 0 0 19 9a7 7 0 0 0-7-7Z"
+                      stroke="currentColor"
+                      strokeWidth="1.7"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M9 22h6"
+                      stroke="currentColor"
+                      strokeWidth="1.7"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                ),
+              },
+              {
+                title: "Combi Boiler vs System Boiler",
+                desc: "Not sure which boiler type suits your home? We break down the key differences, costs and hot water needs.",
+                href: "/guides/combi-boiler-vs-system-boiler",
+                icon: (
+                  <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+                    <path
+                      d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
+                      stroke="currentColor"
+                      strokeWidth="1.7"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M9 7h6M9 11h6M9 15h4"
+                      stroke="currentColor"
+                      strokeWidth="1.7"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                ),
+              },
+              {
+                title: "Heat Pump vs Gas Boiler UK",
+                desc: "Compare running costs, upfront prices and environmental impact to make the right choice for your home.",
+                href: "/guides/heat-pump-vs-gas-boiler",
+                icon: (
+                  <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+                    <path
+                      d="M12 3v18"
+                      stroke="currentColor"
+                      strokeWidth="1.7"
+                      strokeLinecap="round"
+                    />
+                    <path
+                      d="M4 12h16"
+                      stroke="currentColor"
+                      strokeWidth="1.7"
+                      strokeLinecap="round"
+                    />
+                    <path
+                      d="M7.5 7.5a6 6 0 0 0 0 9"
+                      stroke="currentColor"
+                      strokeWidth="1.7"
+                      strokeLinecap="round"
+                    />
+                    <path
+                      d="M16.5 7.5a6 6 0 0 1 0 9"
+                      stroke="currentColor"
+                      strokeWidth="1.7"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                ),
+              },
             ].map((card) => (
               <div
                 key={card.title}
