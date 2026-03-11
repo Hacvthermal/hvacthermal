@@ -74,6 +74,63 @@ const GUIDE_CARDS = [
       </svg>
     ),
   },
+  {
+    title: "How Much Does a Heat Pump Cost UK?",
+    desc: "Average supply and install costs, running cost comparisons, and how to claim the £7,500 BUS grant.",
+    href: "/guides/heat-pump-cost-uk",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path d="M12 3v18" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+        <path d="M4 12h16" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+        <path d="M7.5 7.5a6 6 0 0 0 0 9" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+        <path d="M16.5 7.5a6 6 0 0 1 0 9" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    title: "What Is SEER Rating?",
+    desc: "Understand AC efficiency ratings, how SEER affects running costs, and what rating to look for when buying.",
+    href: "/guides/what-is-seer-rating",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path d="M12 2a7 7 0 0 0-7 7c0 2.1 1.1 4.1 2.8 5.4.9.7 1.2 1.2 1.2 2.1V19a3 3 0 0 0 6 0v-2.5c0-.9.3-1.4 1.2-2.1A6.9 6.9 0 0 0 19 9a7 7 0 0 0-7-7Z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" />
+        <path d="M9 22h6" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    title: "How to Reduce Heating Bills in Winter",
+    desc: "Ten practical tips to cut your heating bills — from boiler settings to draught proofing and smart thermostats.",
+    href: "/guides/how-to-reduce-heating-bills",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" />
+        <path d="M9 7h6M9 11h6M9 15h4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    title: "What Size Radiators Do I Need?",
+    desc: "Size your radiators correctly using BTU and watt outputs — with a room-by-room sizing table.",
+    href: "/guides/what-size-radiators-do-i-need",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" />
+        <path d="M9 7h6M9 11h6M9 15h4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    title: "How Long Does a Boiler Last?",
+    desc: "Average boiler lifespans, signs it needs replacing, and how to decide between repair and replacement.",
+    href: "/guides/how-long-does-a-boiler-last",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" />
+        <path d="M9 7h6M9 11h6M9 15h4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+      </svg>
+    ),
+  },
 ];
 
 export default function Home() {
@@ -367,14 +424,14 @@ export default function Home() {
               <div
                 className="flex transition-transform duration-300 ease-out"
                 style={{
-                  width: "200%",
-                  transform: `translateX(-${guidesPage * 50}%)`,
+                  width: "400%",
+                  transform: `translateX(-${guidesPage * 25}%)`,
                 }}
               >
-                {[0, 1].map((slideIndex) => (
+                {[0, 1, 2, 3].map((slideIndex) => (
                   <div
                     key={slideIndex}
-                    className="flex w-1/2 flex-shrink-0 gap-5 px-1"
+                    className="flex w-1/4 flex-shrink-0 gap-5 px-1"
                   >
                     {GUIDE_CARDS.slice(slideIndex * 3, slideIndex * 3 + 3).map((card) => (
                       <div
@@ -425,8 +482,8 @@ export default function Home() {
             </button>
             <button
               type="button"
-              onClick={() => setGuidesPage((p) => Math.min(1, p + 1))}
-              disabled={guidesPage === 1}
+              onClick={() => setGuidesPage((p) => Math.min(3, p + 1))}
+              disabled={guidesPage === 3}
               aria-label="Next guides"
               className="absolute right-0 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white shadow-md transition hover:bg-slate-50 disabled:pointer-events-none disabled:opacity-50"
               style={{ color: "#1E3A5F" }}
