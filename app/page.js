@@ -1,6 +1,83 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
+
+const GUIDE_CARDS = [
+  {
+    title: "What Size Boiler Do I Need?",
+    desc: "UK-focused guide on boiler sizing: radiators, insulation, property type, combi vs system, and when to use our calculator.",
+    href: "/guides/what-size-boiler-do-i-need",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" />
+        <path d="M9 7h6M9 11h6M9 15h4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    title: "How Many BTU Do I Need?",
+    desc: "Understand BTU sizing for rooms: floor area, ceiling height, insulation, sun exposure, and a handy room-type table.",
+    href: "/guides/how-many-btu-do-i-need",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path d="M12 2a7 7 0 0 0-7 7c0 2.1 1.1 4.1 2.8 5.4.9.7 1.2 1.2 1.2 2.1V19a3 3 0 0 0 6 0v-2.5c0-.9.3-1.4 1.2-2.1A6.9 6.9 0 0 0 19 9a7 7 0 0 0-7-7Z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" />
+        <path d="M9 22h6" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    title: "What Size Heat Pump Do I Need?",
+    desc: "UK heat pump sizing: property type, insulation, region, radiator compatibility, BUS grant, and MCS surveys.",
+    href: "/guides/what-size-heat-pump-do-i-need",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path d="M12 3v18" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+        <path d="M4 12h16" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+        <path d="M7.5 7.5a6 6 0 0 0 0 9" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+        <path d="M16.5 7.5a6 6 0 0 1 0 9" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    title: "What Size Air Conditioner Do I Need?",
+    desc: "Find the right BTU or kW rating for your room. Covers window units, split systems and central AC.",
+    href: "/guides/what-size-air-conditioner-do-i-need",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path d="M12 2a7 7 0 0 0-7 7c0 2.1 1.1 4.1 2.8 5.4.9.7 1.2 1.2 1.2 2.1V19a3 3 0 0 0 6 0v-2.5c0-.9.3-1.4 1.2-2.1A6.9 6.9 0 0 0 19 9a7 7 0 0 0-7-7Z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" />
+        <path d="M9 22h6" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    title: "Combi Boiler vs System Boiler",
+    desc: "Not sure which boiler type suits your home? We break down the key differences, costs and hot water needs.",
+    href: "/guides/combi-boiler-vs-system-boiler",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" />
+        <path d="M9 7h6M9 11h6M9 15h4" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    title: "Heat Pump vs Gas Boiler UK",
+    desc: "Compare running costs, upfront prices and environmental impact to make the right choice for your home.",
+    href: "/guides/heat-pump-vs-gas-boiler",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path d="M12 3v18" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+        <path d="M4 12h16" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+        <path d="M7.5 7.5a6 6 0 0 0 0 9" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+        <path d="M16.5 7.5a6 6 0 0 1 0 9" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+];
 
 export default function Home() {
+  const [guidesPage, setGuidesPage] = useState(0);
   return (
     <div className="min-h-screen bg-white font-sans text-slate-900">
       <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur">
@@ -282,187 +359,82 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-            {[
-              {
-                title: "What Size Boiler Do I Need?",
-                desc: "UK-focused guide on boiler sizing: radiators, insulation, property type, combi vs system, and when to use our calculator.",
-                href: "/guides/what-size-boiler-do-i-need",
-                icon: (
-                  <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
-                    <path
-                      d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
-                      stroke="currentColor"
-                      strokeWidth="1.7"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M9 7h6M9 11h6M9 15h4"
-                      stroke="currentColor"
-                      strokeWidth="1.7"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                ),
-              },
-              {
-                title: "How Many BTU Do I Need?",
-                desc: "Understand BTU sizing for rooms: floor area, ceiling height, insulation, sun exposure, and a handy room-type table.",
-                href: "/guides/how-many-btu-do-i-need",
-                icon: (
-                  <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
-                    <path
-                      d="M12 2a7 7 0 0 0-7 7c0 2.1 1.1 4.1 2.8 5.4.9.7 1.2 1.2 1.2 2.1V19a3 3 0 0 0 6 0v-2.5c0-.9.3-1.4 1.2-2.1A6.9 6.9 0 0 0 19 9a7 7 0 0 0-7-7Z"
-                      stroke="currentColor"
-                      strokeWidth="1.7"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M9 22h6"
-                      stroke="currentColor"
-                      strokeWidth="1.7"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                ),
-              },
-              {
-                title: "What Size Heat Pump Do I Need?",
-                desc: "UK heat pump sizing: property type, insulation, region, radiator compatibility, BUS grant, and MCS surveys.",
-                href: "/guides/what-size-heat-pump-do-i-need",
-                icon: (
-                  <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
-                    <path
-                      d="M12 3v18"
-                      stroke="currentColor"
-                      strokeWidth="1.7"
-                      strokeLinecap="round"
-                    />
-                    <path
-                      d="M4 12h16"
-                      stroke="currentColor"
-                      strokeWidth="1.7"
-                      strokeLinecap="round"
-                    />
-                    <path
-                      d="M7.5 7.5a6 6 0 0 0 0 9"
-                      stroke="currentColor"
-                      strokeWidth="1.7"
-                      strokeLinecap="round"
-                    />
-                    <path
-                      d="M16.5 7.5a6 6 0 0 1 0 9"
-                      stroke="currentColor"
-                      strokeWidth="1.7"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                ),
-              },
-              {
-                title: "What Size Air Conditioner Do I Need?",
-                desc: "Find the right BTU or kW rating for your room. Covers window units, split systems and central AC.",
-                href: "/guides/what-size-air-conditioner-do-i-need",
-                icon: (
-                  <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
-                    <path
-                      d="M12 2a7 7 0 0 0-7 7c0 2.1 1.1 4.1 2.8 5.4.9.7 1.2 1.2 1.2 2.1V19a3 3 0 0 0 6 0v-2.5c0-.9.3-1.4 1.2-2.1A6.9 6.9 0 0 0 19 9a7 7 0 0 0-7-7Z"
-                      stroke="currentColor"
-                      strokeWidth="1.7"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M9 22h6"
-                      stroke="currentColor"
-                      strokeWidth="1.7"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                ),
-              },
-              {
-                title: "Combi Boiler vs System Boiler",
-                desc: "Not sure which boiler type suits your home? We break down the key differences, costs and hot water needs.",
-                href: "/guides/combi-boiler-vs-system-boiler",
-                icon: (
-                  <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
-                    <path
-                      d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
-                      stroke="currentColor"
-                      strokeWidth="1.7"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M9 7h6M9 11h6M9 15h4"
-                      stroke="currentColor"
-                      strokeWidth="1.7"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                ),
-              },
-              {
-                title: "Heat Pump vs Gas Boiler UK",
-                desc: "Compare running costs, upfront prices and environmental impact to make the right choice for your home.",
-                href: "/guides/heat-pump-vs-gas-boiler",
-                icon: (
-                  <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
-                    <path
-                      d="M12 3v18"
-                      stroke="currentColor"
-                      strokeWidth="1.7"
-                      strokeLinecap="round"
-                    />
-                    <path
-                      d="M4 12h16"
-                      stroke="currentColor"
-                      strokeWidth="1.7"
-                      strokeLinecap="round"
-                    />
-                    <path
-                      d="M7.5 7.5a6 6 0 0 0 0 9"
-                      stroke="currentColor"
-                      strokeWidth="1.7"
-                      strokeLinecap="round"
-                    />
-                    <path
-                      d="M16.5 7.5a6 6 0 0 1 0 9"
-                      stroke="currentColor"
-                      strokeWidth="1.7"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                ),
-              },
-            ].map((card) => (
+          <div className="mt-8 relative">
+            <div
+              className="overflow-hidden"
+              style={{ marginLeft: "-0.25rem", marginRight: "-0.25rem" }}
+            >
               <div
-                key={card.title}
-                className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md"
+                className="flex transition-transform duration-300 ease-out"
+                style={{
+                  width: "200%",
+                  transform: `translateX(-${guidesPage * 50}%)`,
+                }}
               >
-                <div className="flex items-start justify-between gap-4">
+                {[0, 1].map((slideIndex) => (
                   <div
-                    className="inline-flex items-center justify-center rounded-xl p-3"
-                    style={{ backgroundColor: "rgba(30,58,95,0.08)", color: "#1E3A5F" }}
-                    aria-hidden="true"
+                    key={slideIndex}
+                    className="flex w-1/2 flex-shrink-0 gap-5 px-1"
                   >
-                    {card.icon}
+                    {GUIDE_CARDS.slice(slideIndex * 3, slideIndex * 3 + 3).map((card) => (
+                      <div
+                        key={card.title}
+                        className="group flex h-[320px] min-w-0 flex-1 flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md"
+                      >
+                        <div className="min-h-0 flex-1">
+                          <div
+                            className="inline-flex items-center justify-center rounded-xl p-3"
+                            style={{ backgroundColor: "rgba(30,58,95,0.08)", color: "#1E3A5F" }}
+                            aria-hidden="true"
+                          >
+                            {card.icon}
+                          </div>
+                          <h3 className="mt-4 text-lg font-bold" style={{ color: "#1E3A5F" }}>
+                            {card.title}
+                          </h3>
+                          <p className="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">
+                            {card.desc}
+                          </p>
+                        </div>
+                        <div className="flex-shrink-0 pt-5">
+                          <Link
+                            href={card.href}
+                            className="inline-flex w-full items-center justify-center rounded-xl px-4 py-3 text-sm font-semibold text-white transition-colors hover:opacity-95"
+                            style={{ backgroundColor: "#1E3A5F" }}
+                          >
+                            Read Guide
+                          </Link>
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                </div>
-                <h3 className="mt-4 text-lg font-bold" style={{ color: "#1E3A5F" }}>
-                  {card.title}
-                </h3>
-                <p className="mt-2 text-sm leading-6 text-slate-600">{card.desc}</p>
-                <div className="mt-5">
-                  <Link
-                    href={card.href}
-                    className="inline-flex w-full items-center justify-center rounded-xl px-4 py-3 text-sm font-semibold text-white transition-colors hover:opacity-95"
-                    style={{ backgroundColor: "#1E3A5F" }}
-                  >
-                    Read Guide
-                  </Link>
-                </div>
+                ))}
               </div>
-            ))}
+            </div>
+            <button
+              type="button"
+              onClick={() => setGuidesPage((p) => Math.max(0, p - 1))}
+              disabled={guidesPage === 0}
+              aria-label="Previous guides"
+              className="absolute left-0 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white shadow-md transition hover:bg-slate-50 disabled:pointer-events-none disabled:opacity-50"
+              style={{ color: "#1E3A5F" }}
+            >
+              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button
+              type="button"
+              onClick={() => setGuidesPage((p) => Math.min(1, p + 1))}
+              disabled={guidesPage === 1}
+              aria-label="Next guides"
+              className="absolute right-0 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white shadow-md transition hover:bg-slate-50 disabled:pointer-events-none disabled:opacity-50"
+              style={{ color: "#1E3A5F" }}
+            >
+              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
           </div>
         </section>
 
