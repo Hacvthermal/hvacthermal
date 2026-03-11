@@ -30,7 +30,13 @@ export default function Home() {
               Calculators
             </Link>
             <Link
-              href="#features"
+              href="/#guides"
+              className="text-slate-700 hover:text-slate-900"
+            >
+              Guides
+            </Link>
+            <Link
+              href="/#features"
               className="text-slate-700 hover:text-slate-900"
             >
               Features
@@ -253,6 +259,131 @@ export default function Home() {
                     style={{ backgroundColor: "#E67E22" }}
                   >
                     Calculate Now
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section
+          id="guides"
+          className="mx-auto w-full max-w-6xl px-4 py-14 sm:px-6 scroll-mt-24"
+        >
+          <div className="flex items-end justify-between gap-6">
+            <div className="max-w-2xl">
+              <h2 className="text-2xl font-bold tracking-tight" style={{ color: "#1E3A5F" }}>
+                Popular guides
+              </h2>
+              <p className="mt-2 text-sm leading-6 text-slate-600 sm:text-base">
+                Step-by-step guides to help you size boilers, heat pumps, and cooling—with practical
+                tips and links to our free calculators.
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              {
+                title: "What Size Boiler Do I Need?",
+                desc: "UK-focused guide on boiler sizing: radiators, insulation, property type, combi vs system, and when to use our calculator.",
+                href: "/guides/what-size-boiler-do-i-need",
+                icon: (
+                  <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+                    <path
+                      d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
+                      stroke="currentColor"
+                      strokeWidth="1.7"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M9 7h6M9 11h6M9 15h4"
+                      stroke="currentColor"
+                      strokeWidth="1.7"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                ),
+              },
+              {
+                title: "How Many BTU Do I Need?",
+                desc: "Understand BTU sizing for rooms: floor area, ceiling height, insulation, sun exposure, and a handy room-type table.",
+                href: "/guides/how-many-btu-do-i-need",
+                icon: (
+                  <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+                    <path
+                      d="M12 2a7 7 0 0 0-7 7c0 2.1 1.1 4.1 2.8 5.4.9.7 1.2 1.2 1.2 2.1V19a3 3 0 0 0 6 0v-2.5c0-.9.3-1.4 1.2-2.1A6.9 6.9 0 0 0 19 9a7 7 0 0 0-7-7Z"
+                      stroke="currentColor"
+                      strokeWidth="1.7"
+                      strokeLinejoin="round"
+                    />
+                    <path
+                      d="M9 22h6"
+                      stroke="currentColor"
+                      strokeWidth="1.7"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                ),
+              },
+              {
+                title: "What Size Heat Pump Do I Need?",
+                desc: "UK heat pump sizing: property type, insulation, region, radiator compatibility, BUS grant, and MCS surveys.",
+                href: "/guides/what-size-heat-pump-do-i-need",
+                icon: (
+                  <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+                    <path
+                      d="M12 3v18"
+                      stroke="currentColor"
+                      strokeWidth="1.7"
+                      strokeLinecap="round"
+                    />
+                    <path
+                      d="M4 12h16"
+                      stroke="currentColor"
+                      strokeWidth="1.7"
+                      strokeLinecap="round"
+                    />
+                    <path
+                      d="M7.5 7.5a6 6 0 0 0 0 9"
+                      stroke="currentColor"
+                      strokeWidth="1.7"
+                      strokeLinecap="round"
+                    />
+                    <path
+                      d="M16.5 7.5a6 6 0 0 1 0 9"
+                      stroke="currentColor"
+                      strokeWidth="1.7"
+                      strokeLinecap="round"
+                    />
+                  </svg>
+                ),
+              },
+            ].map((card) => (
+              <div
+                key={card.title}
+                className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md"
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div
+                    className="inline-flex items-center justify-center rounded-xl p-3"
+                    style={{ backgroundColor: "rgba(30,58,95,0.08)", color: "#1E3A5F" }}
+                    aria-hidden="true"
+                  >
+                    {card.icon}
+                  </div>
+                </div>
+                <h3 className="mt-4 text-lg font-bold" style={{ color: "#1E3A5F" }}>
+                  {card.title}
+                </h3>
+                <p className="mt-2 text-sm leading-6 text-slate-600">{card.desc}</p>
+                <div className="mt-5">
+                  <Link
+                    href={card.href}
+                    className="inline-flex w-full items-center justify-center rounded-xl px-4 py-3 text-sm font-semibold text-white transition-colors hover:opacity-95"
+                    style={{ backgroundColor: "#1E3A5F" }}
+                  >
+                    Read Guide
                   </Link>
                 </div>
               </div>
