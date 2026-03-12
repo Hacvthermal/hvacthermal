@@ -621,6 +621,11 @@ export default function Home() {
                     About
                   </Link>
                 </li>
+                <li>
+                  <Link className="hover:text-slate-900" href="/privacy-policy">
+                    Privacy Policy
+                  </Link>
+                </li>
               </ul>
             </div>
 
