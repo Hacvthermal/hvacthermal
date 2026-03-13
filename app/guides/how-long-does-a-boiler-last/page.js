@@ -36,7 +36,7 @@ export default function HowLongDoesABoilerLastPage() {
               Calculators
             </Link>
             <Link
-              href="/#guides"
+              href="/guides"
               className="text-slate-700 hover:text-slate-900"
             >
               Guides

@@ -36,6 +36,12 @@ export default function HowManyBTUDoINeedPage() {
               Calculators
             </Link>
             <Link
+              href="/guides"
+              className="text-slate-700 hover:text-slate-900"
+            >
+              Guides
+            </Link>
+            <Link
               href="/#features"
               className="text-slate-700 hover:text-slate-900"
             >

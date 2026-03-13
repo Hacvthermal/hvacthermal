@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "What Size Boiler Do I Need? UK Guide 2024 | HVACThermal",
+  title: "What Size Boiler Do I Need? UK Guide 2026 | HVACThermal",
   description:
     "Find the right boiler size for your UK home. Learn about radiators, insulation, property type, and combi vs system boilers. Use our free calculator for accurate sizing.",
 };
@@ -34,6 +34,12 @@ export default function WhatSizeBoilerDoINeedPage() {
               className="text-slate-700 hover:text-slate-900"
             >
               Calculators
+            </Link>
+            <Link
+              href="/guides"
+              className="text-slate-700 hover:text-slate-900"
+            >
+              Guides
             </Link>
             <Link
               href="/#features"
