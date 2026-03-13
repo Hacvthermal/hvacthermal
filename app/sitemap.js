@@ -18,6 +18,7 @@ const guidePaths = [
   "/guides/how-to-reduce-heating-bills",
   "/guides/what-size-radiators-do-i-need",
   "/guides/how-long-does-a-boiler-last",
+  "/guides/new-boiler-cost-uk",
 ];
 
 export default function sitemap() {
