@@ -28,6 +28,13 @@ export default function sitemap() {
     priority: 1.0,
   };
 
+  const guidesIndex = {
+    url: `${BASE_URL}/guides`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.9,
+  };
+
   const calculators = calculatorPaths.map((path) => ({
     url: `${BASE_URL}${path}`,
     lastModified: new Date(),
@@ -42,5 +49,5 @@ export default function sitemap() {
     priority: 0.8,
   }));
 
-  return [homepage, ...calculators, ...guides];
+  return [homepage, guidesIndex, ...calculators, ...guides];
 }
