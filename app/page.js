@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
 
 const GUIDE_CARDS = [
   {
@@ -134,7 +133,6 @@ const GUIDE_CARDS = [
 ];
 
 export default function Home() {
-  const [guidesPage, setGuidesPage] = useState(0);
   return (
     <div className="min-h-screen bg-white font-sans text-slate-900">
       <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur">
@@ -404,94 +402,25 @@ export default function Home() {
           id="guides"
           className="mx-auto w-full max-w-6xl px-4 py-14 sm:px-6 scroll-mt-24"
         >
-          <div className="flex items-end justify-between gap-6">
+          <div
+            className="flex flex-col items-start justify-between gap-4 rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:flex-row sm:items-center sm:p-8"
+          >
             <div className="max-w-2xl">
-              <h2 className="text-2xl font-bold tracking-tight" style={{ color: "#1E3A5F" }}>
-                Popular guides
-              </h2>
-              <p className="mt-2 text-sm leading-6 text-slate-600 sm:text-base">
-                Step-by-step guides to help you size boilers, heat pumps, and cooling—with practical
-                tips and links to our free calculators.
+              <p className="text-sm font-semibold" style={{ color: "#1E3A5F" }}>
+                Looking for sizing guides?
+              </p>
+              <p className="mt-1 text-sm leading-6 text-slate-600 sm:text-base">
+                Browse our step-by-step guides for boilers, heat pumps, and cooling—plus links to the
+                free calculators.
               </p>
             </div>
-          </div>
-
-          <div className="mt-8 relative">
-            <div
-              className="overflow-hidden"
-              style={{ marginLeft: "-0.25rem", marginRight: "-0.25rem" }}
+            <Link
+              href="/guides"
+              className="inline-flex w-full items-center justify-center rounded-full px-5 py-3 text-sm font-semibold text-white shadow-sm transition-colors sm:w-auto"
+              style={{ backgroundColor: "#E67E22" }}
             >
-              <div
-                className="flex transition-transform duration-300 ease-out"
-                style={{
-                  width: "400%",
-                  transform: `translateX(-${guidesPage * 25}%)`,
-                }}
-              >
-                {[0, 1, 2, 3].map((slideIndex) => (
-                  <div
-                    key={slideIndex}
-                    className="flex w-1/4 flex-shrink-0 gap-5 px-1"
-                  >
-                    {GUIDE_CARDS.slice(slideIndex * 3, slideIndex * 3 + 3).map((card) => (
-                      <div
-                        key={card.title}
-                        className="group flex h-[320px] min-w-0 flex-1 flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md"
-                      >
-                        <div className="min-h-0 flex-1">
-                          <div
-                            className="inline-flex items-center justify-center rounded-xl p-3"
-                            style={{ backgroundColor: "rgba(30,58,95,0.08)", color: "#1E3A5F" }}
-                            aria-hidden="true"
-                          >
-                            {card.icon}
-                          </div>
-                          <h3 className="mt-4 text-lg font-bold" style={{ color: "#1E3A5F" }}>
-                            {card.title}
-                          </h3>
-                          <p className="mt-2 text-sm leading-6 text-slate-600 line-clamp-3">
-                            {card.desc}
-                          </p>
-                        </div>
-                        <div className="flex-shrink-0 pt-5">
-                          <Link
-                            href={card.href}
-                            className="inline-flex w-full items-center justify-center rounded-xl px-4 py-3 text-sm font-semibold text-white transition-colors hover:opacity-95"
-                            style={{ backgroundColor: "#1E3A5F" }}
-                          >
-                            Read Guide
-                          </Link>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                ))}
-              </div>
-            </div>
-            <button
-              type="button"
-              onClick={() => setGuidesPage((p) => Math.max(0, p - 1))}
-              disabled={guidesPage === 0}
-              aria-label="Previous guides"
-              className="absolute left-0 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white shadow-md transition hover:bg-slate-50 disabled:pointer-events-none disabled:opacity-50"
-              style={{ color: "#1E3A5F" }}
-            >
-              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-              </svg>
-            </button>
-            <button
-              type="button"
-              onClick={() => setGuidesPage((p) => Math.min(3, p + 1))}
-              disabled={guidesPage === 3}
-              aria-label="Next guides"
-              className="absolute right-0 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-slate-200 bg-white shadow-md transition hover:bg-slate-50 disabled:pointer-events-none disabled:opacity-50"
-              style={{ color: "#1E3A5F" }}
-            >
-              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-              </svg>
-            </button>
+              Browse all guides →
+            </Link>
           </div>
         </section>
 
