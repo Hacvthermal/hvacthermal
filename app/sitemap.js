@@ -19,6 +19,8 @@ const guidePaths = [
   "/guides/what-size-radiators-do-i-need",
   "/guides/how-long-does-a-boiler-last",
   "/guides/new-boiler-cost-uk",
+  "/guides/how-to-repressurise-a-boiler",
+  "/guides/what-temperature-should-my-boiler-be-set-to",
 ];
 
 export default function sitemap() {
