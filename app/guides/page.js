@@ -279,6 +279,27 @@ const GUIDE_CARDS = [
       </svg>
     ),
   },
+  {
+    title: "Boiler Service Cost UK 2026",
+    desc: "How much does a boiler service cost in the UK? Average costs, what's included, and how to save on your annual boiler service.",
+    href: "/guides/boiler-service-cost-uk",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path
+          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M9 7h6M9 11h6M9 15h4"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+  },
 ];
 
 export default function GuidesIndexPage() {

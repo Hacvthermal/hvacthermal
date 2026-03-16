@@ -21,6 +21,7 @@ const guidePaths = [
   "/guides/new-boiler-cost-uk",
   "/guides/how-to-repressurise-a-boiler",
   "/guides/what-temperature-should-my-boiler-be-set-to",
+  "/guides/boiler-service-cost-uk",
 ];
 
 export default function sitemap() {

@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Boiler Service Cost UK 2025: What to Expect | HVACThermal",
+  title: "Boiler Service Cost UK 2026: What to Expect | HVACThermal",
   description:
-    "How much does a boiler service cost in the UK? 2025 price guide covering average costs, what's included, and how to save money on your annual boiler service.",
+    "How much does a boiler service cost in the UK? 2026 price guide covering average costs, what's included, and how to save money on your annual boiler service.",
 };
 
 export default function BoilerServiceCostUKPage() {
@@ -76,11 +76,11 @@ export default function BoilerServiceCostUKPage() {
             className="text-3xl font-extrabold tracking-tight sm:text-4xl"
             style={{ color: "#1E3A5F" }}
           >
-            Boiler Service Cost UK 2025: What to Expect
+            Boiler Service Cost UK 2026: What to Expect
           </h1>
           <p className="mt-4 text-lg leading-7 text-slate-600">
             An annual boiler service keeps your heating safe and efficient and
-            can extend the life of your boiler. This guide covers typical 2025
+            can extend the life of your boiler. This guide covers typical 2026
             UK costs, what is included in a service, and how to save money.
           </p>
 
