@@ -90,19 +90,18 @@ export default function NewBoilerCostUKPage() {
               className="text-2xl font-bold tracking-tight"
               style={{ color: "#1E3A5F" }}
             >
-              Introduction: Average New Boiler Costs
+              Introduction: Typical New Boiler Cost Range
             </h2>
             <p className="mt-4 text-slate-600 leading-7">
               In the UK, a new boiler <strong>supply and fit</strong> typically
-              ranges from <strong>£1,500 to £4,000</strong> installed. The
-              exact cost depends on boiler type (combi, system or
-              conventional), size (kW), brand, and how complex the
-              installation is. A straightforward like-for-like combi swap
-              often sits in the £2,000–£3,200 range; system and conventional
-              boilers usually cost more because of the cylinder and extra
-              pipework. Getting at least three quotes from Gas Safe
-              installers is the best way to find a fair price for your
-              situation.
+              ranges from <strong>£1,500 to £4,000</strong> installed. The exact
+              cost depends on boiler type (combi, system or conventional), size
+              (kW), brand, and how complex the installation is. A
+              straightforward like-for-like combi swap often sits in the
+              £2,000–£3,200 range; system and conventional boilers usually
+              cost more because of the cylinder and extra pipework. Getting
+              at least three quotes from Gas Safe installers is the best way
+              to find a fair price for your situation.
             </p>
           </section>
 
@@ -111,7 +110,7 @@ export default function NewBoilerCostUKPage() {
               className="text-2xl font-bold tracking-tight"
               style={{ color: "#1E3A5F" }}
             >
-              Combi Boiler Costs (Supply and Fit)
+              Combi Boiler Costs by Home Size
             </h2>
             <p className="mt-4 text-slate-600 leading-7">
               Combi boilers heat your radiators and hot water from one unit,
@@ -124,10 +123,10 @@ export default function NewBoilerCostUKPage() {
               <li><strong>Large home or high hot water demand:</strong> 35–40 kW combi — typically £2,800–£4,000+ supply and fit.</li>
             </ul>
             <p className="mt-4 text-slate-600 leading-7">
-              Premium brands (Worcester Bosch, Vaillant, Viessmann) sit at
-              the upper end; budget and mid-range brands (Baxi, Ideal,
-              Alpha) at the lower end. Moving the boiler or converting from
-              another type adds £500–£1,500 or more.
+              Premium brands (Worcester Bosch, Vaillant, Viessmann) sit at the
+              upper end; budget and mid-range brands (Baxi, Ideal, Alpha) at
+              the lower end. Moving the boiler or converting from another type
+              adds £500–£1,500 or more.
             </p>
           </section>
 
@@ -146,9 +145,9 @@ export default function NewBoilerCostUKPage() {
             <p className="mt-4 text-slate-600 leading-7">
               <strong>Supply only:</strong> Boiler £750–£2,600; cylinder
               £400–£1,200. <strong>Fully installed:</strong> typically
-              £2,800–£5,000 depending on cylinder size, brand and
-              complexity. New cylinder and upgraded controls add to the
-              total compared with a combi-only install.
+              £2,800–£5,000 depending on cylinder size, brand and complexity.
+              New cylinder and upgraded controls add to the total compared
+              with a combi-only install.
             </p>
           </section>
 
@@ -160,9 +159,9 @@ export default function NewBoilerCostUKPage() {
               Conventional Boiler Costs
             </h2>
             <p className="mt-4 text-slate-600 leading-7">
-              Conventional (heat-only) boilers work with a cylinder and
-              often a cold water tank in the loft. They are common in older
-              UK properties. Installation is more involved.
+              Conventional (heat-only) boilers work with a cylinder and often
+              a cold water tank in the loft. They are common in older UK
+              properties. Installation is more involved.
             </p>
             <p className="mt-4 text-slate-600 leading-7">
               <strong>Supply only:</strong> £600–£2,000 for the boiler.
@@ -187,8 +186,8 @@ export default function NewBoilerCostUKPage() {
               flue changes and making good. Converting from one boiler type
               to another (e.g. conventional to combi) can add £1,000–£2,000
               to labour. Gas Safe registered installers set their own rates;
-              London and the South East are typically 20–30% higher than
-              the national average.
+              London and the South East are typically 20–30% higher than the
+              national average.
             </p>
           </section>
 
@@ -221,7 +220,8 @@ export default function NewBoilerCostUKPage() {
               <li><strong>Get at least three quotes</strong> from Gas Safe registered installers. Prices can vary by hundreds of pounds for the same job.</li>
               <li><strong>Avoid going through your energy supplier</strong> for installation—they often charge above market rates. Use local independent installers.</li>
               <li><strong>Consider mid-range brands</strong> (e.g. Ideal, Baxi) rather than the most expensive—reliability is still good and you save on the unit cost.</li>
-              <li><strong>Check grants:</strong> ECO4 can fund or part-fund a boiler replacement for eligible households (certain benefits, low EPC). The Boiler Upgrade Scheme (BUS) offers grants for heat pumps, not gas boilers. Your installer can advise on eligibility.</li>
+              <li><strong>ECO4 scheme:</strong> The Energy Company Obligation (ECO4) can fund or part-fund a boiler replacement for eligible households (certain benefits, low EPC rating). You cannot apply directly—an approved installer assesses and submits on your behalf.</li>
+              <li><strong>Boiler Upgrade Scheme (BUS):</strong> BUS offers grants of up to £7,500 for heat pumps, not for gas boilers. If you are considering a heat pump instead of a boiler, your installer can advise on eligibility.</li>
             </ul>
           </section>
 
@@ -239,9 +239,9 @@ export default function NewBoilerCostUKPage() {
               Get the Right Boiler Size Before You Quote
             </h3>
             <p className="mt-3 text-slate-700 leading-7">
-              Use our free boiler size calculator to get a recommended kW
-              range for your property, radiators and hot water use—then
-              compare quotes like for like.
+              Our free boiler size calculator uses your property details,
+              radiator count, insulation and hot water needs to recommend a
+              suitable kW range. No sign-up required—get results in seconds.
             </p>
             <Link
               href="/calculator/boiler-size-calculator"
@@ -270,7 +270,7 @@ export default function NewBoilerCostUKPage() {
               A like-for-like combi swap usually takes one day. A system or
               conventional boiler install, or a conversion from one type to
               another, often takes two days. Relocating the boiler can add
-              extra time.
+              extra time depending on pipework and access.
             </p>
 
             <h3
