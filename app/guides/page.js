@@ -195,6 +195,48 @@ const GUIDE_CARDS = [
       </svg>
     ),
   },
+  {
+    title: "Best Combi Boilers UK 2026",
+    desc: "Compare the top 5 combi boilers for UK homes in 2026 — reliability ratings, warranties, installed costs and brands to avoid.",
+    href: "/guides/best-combi-boilers-uk",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path
+          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M9 7h6M9 11h6M9 15h4"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "How to Bleed a Radiator",
+    desc: "Step-by-step guide to bleeding your radiators — signs to look for, tools needed, and what to do if bleeding doesn't fix the problem.",
+    href: "/guides/how-to-bleed-a-radiator",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path
+          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M9 7h6M9 11h6M9 15h4"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+  },
 ];
 
 export default function GuidesIndexPage() {
