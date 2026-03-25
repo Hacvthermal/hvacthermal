@@ -22,6 +22,10 @@ const guidePaths = [
   "/guides/how-to-repressurise-a-boiler",
   "/guides/what-temperature-should-my-boiler-be-set-to",
   "/guides/boiler-service-cost-uk",
+  "/guides/why-is-my-boiler-losing-pressure",
+  "/guides/how-often-should-a-boiler-be-serviced",
+  "/guides/boiler-making-noise",
+  "/guides/what-is-a-combi-boiler",
 ];
 
 export default function sitemap() {

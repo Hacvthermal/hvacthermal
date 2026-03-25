@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "How Long Does a Boiler Last? UK Boiler Lifespan Guide | HVACThermal",
+  title: "How Long Does a Boiler Last? UK Lifespan Guide 2025 | HVACThermal",
   description:
-    "UK boiler lifespan by type, signs you need a new boiler, how servicing extends life, repair vs replace, and efficiency savings. Free boiler size calculator.",
+    "Find out how long a boiler should last, signs it needs replacing, and when to repair vs replace. Practical advice for UK homeowners.",
 };
 
 export default function HowLongDoesABoilerLastPage() {
@@ -277,18 +277,71 @@ export default function HowLongDoesABoilerLastPage() {
               className="text-2xl font-bold tracking-tight"
               style={{ color: "#1E3A5F" }}
             >
-              Next Steps
+              Frequently Asked Questions
             </h2>
-            <p className="mt-4 text-slate-600 leading-7">
-              If your boiler is within its typical lifespan and working well,
-              book an annual service and keep an eye on performance. If it&apos;s
-              old, unreliable, or showing the warning signs above, get a Gas
-              Safe engineer to assess it and give you repair and replacement
-              options. When you decide to replace, use our boiler size
-              calculator to confirm the right output, then get at least three
-              quotes from registered installers. A correctly sized, modern
-              boiler will keep you warm and cut your bills for the next decade
-              or more.
+
+            <h3
+              className="mt-6 text-xl font-semibold"
+              style={{ color: "#1E3A5F" }}
+            >
+              How long does a boiler last on average in the UK?
+            </h3>
+            <p className="mt-2 text-slate-600 leading-7">
+              Many boilers last around 10–15 years, but it varies by boiler type,
+              installation quality, water quality, and maintenance. Some systems
+              run longer, while others need replacing sooner if they suffer
+              repeated breakdowns.
+            </p>
+
+            <h3
+              className="mt-6 text-xl font-semibold"
+              style={{ color: "#1E3A5F" }}
+            >
+              What are the main signs a boiler is reaching end of life?
+            </h3>
+            <p className="mt-2 text-slate-600 leading-7">
+              Common signs include frequent breakdowns, rising repair costs,
+              leaks, poor heating/hot water performance, repeated lockouts, and
+              reduced efficiency (higher bills for the same comfort).
+            </p>
+
+            <h3
+              className="mt-6 text-xl font-semibold"
+              style={{ color: "#1E3A5F" }}
+            >
+              Is it worth repairing a boiler over 10 years old?
+            </h3>
+            <p className="mt-2 text-slate-600 leading-7">
+              It can be, if the fault is minor and the boiler has been reliable.
+              If repairs are expensive and recurring, or key parts are failing,
+              replacement is often better value—especially when you factor in
+              efficiency improvements.
+            </p>
+
+            <h3
+              className="mt-6 text-xl font-semibold"
+              style={{ color: "#1E3A5F" }}
+            >
+              Does annual servicing really extend boiler lifespan?
+            </h3>
+            <p className="mt-2 text-slate-600 leading-7">
+              Yes. Regular servicing helps keep combustion safe, spots wear early,
+              and prevents small issues turning into major failures. It also helps
+              keep the boiler running efficiently and can be required for warranty
+              terms.
+            </p>
+
+            <h3
+              className="mt-6 text-xl font-semibold"
+              style={{ color: "#1E3A5F" }}
+            >
+              Should I replace my boiler before it fails?
+            </h3>
+            <p className="mt-2 text-slate-600 leading-7">
+              If the boiler is old, unreliable, or parts are becoming hard to
+              source, proactive replacement can avoid emergency callouts in winter.
+              If it&apos;s still running well with minimal issues, servicing and
+              monitoring can be a sensible approach.
             </p>
           </section>
         </article>
