@@ -26,6 +26,11 @@ const guidePaths = [
   "/guides/how-often-should-a-boiler-be-serviced",
   "/guides/boiler-making-noise",
   "/guides/what-is-a-combi-boiler",
+  "/guides/boiler-error-codes",
+  "/guides/central-heating-not-working",
+  "/guides/when-should-i-replace-my-boiler",
+  "/guides/boiler-cover-uk",
+  "/guides/how-to-save-money-on-heating-bills",
 ];
 
 export default function sitemap() {
