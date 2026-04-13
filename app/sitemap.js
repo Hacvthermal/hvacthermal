@@ -31,6 +31,11 @@ const guidePaths = [
   "/guides/when-should-i-replace-my-boiler",
   "/guides/boiler-cover-uk",
   "/guides/how-to-save-money-on-heating-bills",
+  "/guides/boiler-pressure-too-high",
+  "/guides/what-is-a-system-boiler",
+  "/guides/gas-boiler-ban-uk",
+  "/guides/home-energy-efficiency-uk",
+  "/guides/underfloor-heating-vs-radiators",
 ];
 
 export default function sitemap() {
