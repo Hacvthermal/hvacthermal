@@ -203,7 +203,7 @@ export default function HeatPumpSizeCalculatorUkPage() {
               practical heat pump size range to discuss with an MCS installer.
             </p>
             <Link
-              href="/calculator/heat-pump-calculator"
+              href="/calculator/heat-pump-size-calculator"
               className="mt-6 inline-flex items-center justify-center rounded-full px-6 py-3 text-base font-semibold text-white shadow-sm transition-colors hover:opacity-95"
               style={{ backgroundColor: "#E67E22" }}
             >

@@ -7,6 +7,10 @@ const calculatorPaths = [
 ];
 
 const guidePaths = [
+  "/guides/boiler-size-calculator-uk",
+  "/guides/heat-pump-size-calculator-uk",
+  "/guides/boiler-kw-calculator",
+  "/guides/air-source-heat-pump-calculator-uk",
   "/guides/what-size-boiler-do-i-need",
   "/guides/how-many-btu-do-i-need",
   "/guides/what-size-heat-pump-do-i-need",

@@ -4,6 +4,27 @@ import Link from "next/link";
 
 const GUIDE_CARDS = [
   {
+    title: "Boiler Size Calculator UK",
+    desc: "Find the right boiler kW output for your home. Covers combi, system and conventional boilers for UK properties.",
+    href: "/guides/boiler-size-calculator-uk",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path
+          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M9 7h6M9 11h6M9 15h4"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+  },
+  {
     title: "What Size Boiler Do I Need?",
     desc: "UK-focused guide on boiler sizing: radiators, insulation, property type, combi vs system, and when to use our calculator.",
     href: "/guides/what-size-boiler-do-i-need",
@@ -21,6 +42,53 @@ const GUIDE_CARDS = [
           strokeWidth="1.7"
           strokeLinecap="round"
         />
+      </svg>
+    ),
+  },
+  {
+    title: "Boiler kW Calculator",
+    desc: "Work out the right boiler kW output for your home. Heat loss basics, what affects output, and common mistakes to avoid.",
+    href: "/guides/boiler-kw-calculator",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path
+          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M9 7h6M9 11h6M9 15h4"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Heat Pump Size Calculator UK",
+    desc: "Estimate the right size heat pump for a UK home. Covers kW sizing, key factors, and BUS grant context.",
+    href: "/guides/heat-pump-size-calculator-uk",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path d="M12 3v18" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+        <path d="M4 12h16" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+        <path d="M7.5 7.5a6 6 0 0 0 0 9" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+        <path d="M16.5 7.5a6 6 0 0 1 0 9" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    title: "Air Source Heat Pump Calculator UK",
+    desc: "ASHP sizing and cost guide for UK homes. Running costs, installation basics, and the £7,500 BUS grant.",
+    href: "/guides/air-source-heat-pump-calculator-uk",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path d="M12 3v18" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+        <path d="M4 12h16" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+        <path d="M7.5 7.5a6 6 0 0 0 0 9" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+        <path d="M16.5 7.5a6 6 0 0 1 0 9" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
       </svg>
     ),
   },

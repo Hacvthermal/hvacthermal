@@ -180,7 +180,7 @@ export default function AirSourceHeatPumpCalculatorUkPage() {
               It’s a great starting point before getting an MCS survey and quote.
             </p>
             <Link
-              href="/calculator/heat-pump-calculator"
+              href="/calculator/heat-pump-size-calculator"
               className="mt-6 inline-flex items-center justify-center rounded-full px-6 py-3 text-base font-semibold text-white shadow-sm transition-colors hover:opacity-95"
               style={{ backgroundColor: "#E67E22" }}
             >
