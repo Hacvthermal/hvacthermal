@@ -4,6 +4,187 @@ import Link from "next/link";
 
 const GUIDE_CARDS = [
   {
+    title: "Boiler Size Calculator UK",
+    desc: "Find the right boiler kW output for your home. Covers combi, system and conventional boilers for UK properties.",
+    href: "/guides/boiler-size-calculator-uk",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path
+          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M9 7h6M9 11h6M9 15h4"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Heat Pump Size Calculator UK",
+    desc: "Estimate the right size heat pump for a UK home. Covers kW sizing, key factors, and BUS grant context.",
+    href: "/guides/heat-pump-size-calculator-uk",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path d="M12 3v18" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+        <path d="M4 12h16" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+        <path d="M7.5 7.5a6 6 0 0 0 0 9" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+        <path d="M16.5 7.5a6 6 0 0 1 0 9" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    title: "Boiler Service Cost UK 2026",
+    desc: "How much does a boiler service cost in the UK? Average costs, what's included, and how to save on your annual boiler service.",
+    href: "/guides/boiler-service-cost-uk",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path
+          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M9 7h6M9 11h6M9 15h4"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Why Is My Boiler Losing Pressure?",
+    desc: "Boiler keeps losing pressure? Common UK causes, what to check safely, and when to call an engineer.",
+    href: "/guides/why-is-my-boiler-losing-pressure",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path
+          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M9 7h6M9 11h6M9 15h4"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "What Is a Combi Boiler? (UK)",
+    desc: "How combi boilers work, key pros and cons, typical costs, and whether a combi is right for your home.",
+    href: "/guides/what-is-a-combi-boiler",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path
+          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M9 7h6M9 11h6M9 15h4"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Boiler Making Noise? What It Means",
+    desc: "Banging, whistling or gurgling boiler? What common noises mean, likely causes, and when to call an engineer.",
+    href: "/guides/boiler-making-noise",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path
+          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M9 7h6M9 11h6M9 15h4"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "How to Repressurise a Boiler",
+    desc: "Step-by-step guide to repressurising your boiler — what pressure it should be, how to use the filling loop, and when to call an engineer.",
+    href: "/guides/how-to-repressurise-a-boiler",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path
+          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M9 7h6M9 11h6M9 15h4"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Radiator Not Heating Up?",
+    desc: "Common UK causes and fixes: air, low pressure, stuck TRVs, balancing, and sludge—plus when to call an engineer.",
+    href: "/guides/radiator-not-heating-up",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path
+          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M9 7h6M9 11h6M9 15h4"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "How to Bleed a Radiator",
+    desc: "Step-by-step guide to bleeding your radiators — signs to look for, tools needed, and what to do if bleeding doesn't fix the problem.",
+    href: "/guides/how-to-bleed-a-radiator",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path
+          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M9 7h6M9 11h6M9 15h4"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+  },
+  {
     title: "Smart Thermostats UK (2025)",
     desc: "Are smart thermostats worth it in the UK? Costs, realistic energy savings, and what to know about Nest and Hive.",
     href: "/guides/smart-thermostat-uk",
@@ -83,48 +264,6 @@ const GUIDE_CARDS = [
     ),
   },
   {
-    title: "Radiator Not Heating Up?",
-    desc: "Common UK causes and fixes: air, low pressure, stuck TRVs, balancing, and sludge—plus when to call an engineer.",
-    href: "/guides/radiator-not-heating-up",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
-        <path
-          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
-          stroke="currentColor"
-          strokeWidth="1.7"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M9 7h6M9 11h6M9 15h4"
-          stroke="currentColor"
-          strokeWidth="1.7"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Boiler Size Calculator UK",
-    desc: "Find the right boiler kW output for your home. Covers combi, system and conventional boilers for UK properties.",
-    href: "/guides/boiler-size-calculator-uk",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
-        <path
-          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
-          stroke="currentColor"
-          strokeWidth="1.7"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M9 7h6M9 11h6M9 15h4"
-          stroke="currentColor"
-          strokeWidth="1.7"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
-  },
-  {
     title: "What Size Boiler Do I Need?",
     desc: "UK-focused guide on boiler sizing: radiators, insulation, property type, combi vs system, and when to use our calculator.",
     href: "/guides/what-size-boiler-do-i-need",
@@ -163,19 +302,6 @@ const GUIDE_CARDS = [
           strokeWidth="1.7"
           strokeLinecap="round"
         />
-      </svg>
-    ),
-  },
-  {
-    title: "Heat Pump Size Calculator UK",
-    desc: "Estimate the right size heat pump for a UK home. Covers kW sizing, key factors, and BUS grant context.",
-    href: "/guides/heat-pump-size-calculator-uk",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
-        <path d="M12 3v18" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
-        <path d="M4 12h16" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
-        <path d="M7.5 7.5a6 6 0 0 0 0 9" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
-        <path d="M16.5 7.5a6 6 0 0 1 0 9" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -385,48 +511,6 @@ const GUIDE_CARDS = [
     ),
   },
   {
-    title: "How to Bleed a Radiator",
-    desc: "Step-by-step guide to bleeding your radiators — signs to look for, tools needed, and what to do if bleeding doesn't fix the problem.",
-    href: "/guides/how-to-bleed-a-radiator",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
-        <path
-          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
-          stroke="currentColor"
-          strokeWidth="1.7"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M9 7h6M9 11h6M9 15h4"
-          stroke="currentColor"
-          strokeWidth="1.7"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "How to Repressurise a Boiler",
-    desc: "Step-by-step guide to repressurising your boiler — what pressure it should be, how to use the filling loop, and when to call an engineer.",
-    href: "/guides/how-to-repressurise-a-boiler",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
-        <path
-          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
-          stroke="currentColor"
-          strokeWidth="1.7"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M9 7h6M9 11h6M9 15h4"
-          stroke="currentColor"
-          strokeWidth="1.7"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
-  },
-  {
     title: "What Temperature Should My Boiler Be Set To?",
     desc: "Find the right flow temperature for your boiler — how lower settings save money, hot water safety, and weather compensation explained.",
     href: "/guides/what-temperature-should-my-boiler-be-set-to",
@@ -448,93 +532,9 @@ const GUIDE_CARDS = [
     ),
   },
   {
-    title: "Boiler Service Cost UK 2026",
-    desc: "How much does a boiler service cost in the UK? Average costs, what's included, and how to save on your annual boiler service.",
-    href: "/guides/boiler-service-cost-uk",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
-        <path
-          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
-          stroke="currentColor"
-          strokeWidth="1.7"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M9 7h6M9 11h6M9 15h4"
-          stroke="currentColor"
-          strokeWidth="1.7"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Why Is My Boiler Losing Pressure?",
-    desc: "Boiler keeps losing pressure? Common UK causes, what to check safely, and when to call an engineer.",
-    href: "/guides/why-is-my-boiler-losing-pressure",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
-        <path
-          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
-          stroke="currentColor"
-          strokeWidth="1.7"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M9 7h6M9 11h6M9 15h4"
-          stroke="currentColor"
-          strokeWidth="1.7"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
-  },
-  {
     title: "How Often Should a Boiler Be Serviced? (UK)",
     desc: "How often to service your boiler, why it matters, and what can happen if you skip annual servicing.",
     href: "/guides/how-often-should-a-boiler-be-serviced",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
-        <path
-          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
-          stroke="currentColor"
-          strokeWidth="1.7"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M9 7h6M9 11h6M9 15h4"
-          stroke="currentColor"
-          strokeWidth="1.7"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "Boiler Making Noise? What It Means",
-    desc: "Banging, whistling or gurgling boiler? What common noises mean, likely causes, and when to call an engineer.",
-    href: "/guides/boiler-making-noise",
-    icon: (
-      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
-        <path
-          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
-          stroke="currentColor"
-          strokeWidth="1.7"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M9 7h6M9 11h6M9 15h4"
-          stroke="currentColor"
-          strokeWidth="1.7"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
-  },
-  {
-    title: "What Is a Combi Boiler? (UK)",
-    desc: "How combi boilers work, key pros and cons, typical costs, and whether a combi is right for your home.",
-    href: "/guides/what-is-a-combi-boiler",
     icon: (
       <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
         <path
