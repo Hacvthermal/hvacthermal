@@ -4,6 +4,106 @@ import Link from "next/link";
 
 const GUIDE_CARDS = [
   {
+    title: "Smart Thermostats UK (2025)",
+    desc: "Are smart thermostats worth it in the UK? Costs, realistic energy savings, and what to know about Nest and Hive.",
+    href: "/guides/smart-thermostat-uk",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path
+          d="M12 2a7 7 0 0 0-7 7c0 2.1 1.1 4.1 2.8 5.4.9.7 1.2 1.2 1.2 2.1V19a3 3 0 0 0 6 0v-2.5c0-.9.3-1.4 1.2-2.1A6.9 6.9 0 0 0 19 9a7 7 0 0 0-7-7Z"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinejoin="round"
+        />
+        <path d="M9 22h6" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" />
+      </svg>
+    ),
+  },
+  {
+    title: "How to Turn Off a Boiler (UK)",
+    desc: "Step-by-step shutdown guide for combi, system and conventional boilers in UK homes, including frost and emergency notes.",
+    href: "/guides/how-to-turn-off-a-boiler",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path
+          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M9 7h6M9 11h6M9 15h4"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Boiler Flue Regulations UK",
+    desc: "Flue rules explained for homeowners: positioning basics, terminal guards, plume considerations, and installer responsibilities.",
+    href: "/guides/boiler-flue-regulations-uk",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path
+          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M9 7h6M9 11h6M9 15h4"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "How to Drain a Central Heating System",
+    desc: "UK step-by-step guide to draining, then refilling and repressurising your heating system safely.",
+    href: "/guides/how-to-drain-central-heating-system",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path
+          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M9 7h6M9 11h6M9 15h4"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+  },
+  {
+    title: "Radiator Not Heating Up?",
+    desc: "Common UK causes and fixes: air, low pressure, stuck TRVs, balancing, and sludge—plus when to call an engineer.",
+    href: "/guides/radiator-not-heating-up",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path
+          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M9 7h6M9 11h6M9 15h4"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+  },
+  {
     title: "Boiler Size Calculator UK",
     desc: "Find the right boiler kW output for your home. Covers combi, system and conventional boilers for UK properties.",
     href: "/guides/boiler-size-calculator-uk",

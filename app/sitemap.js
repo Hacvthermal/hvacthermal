@@ -7,6 +7,11 @@ const calculatorPaths = [
 ];
 
 const guidePaths = [
+  "/guides/smart-thermostat-uk",
+  "/guides/how-to-turn-off-a-boiler",
+  "/guides/boiler-flue-regulations-uk",
+  "/guides/how-to-drain-central-heating-system",
+  "/guides/radiator-not-heating-up",
   "/guides/boiler-size-calculator-uk",
   "/guides/heat-pump-size-calculator-uk",
   "/guides/boiler-kw-calculator",
