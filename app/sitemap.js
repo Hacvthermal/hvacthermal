@@ -7,6 +7,16 @@ const calculatorPaths = [
 ];
 
 const guidePaths = [
+  "/guides/boiler-installation-uk",
+  "/guides/worcester-bosch-boiler-review",
+  "/guides/vaillant-boiler-review",
+  "/guides/baxi-boiler-review",
+  "/guides/ideal-boiler-review",
+  "/guides/boiler-grant-uk",
+  "/guides/eco4-scheme-uk",
+  "/guides/gas-safe-engineer-uk",
+  "/guides/central-heating-system-types-uk",
+  "/guides/boiler-warranty-uk",
   "/guides/smart-thermostat-uk",
   "/guides/how-to-turn-off-a-boiler",
   "/guides/boiler-flue-regulations-uk",
