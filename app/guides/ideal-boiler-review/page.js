@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Ideal Boiler Review UK 2025: Pros, Cons & Reliability | HVACThermal",
+  title: "Ideal Boiler Review UK 2026: Pros, Cons & Reliability | HVACThermal",
   description:
-    "Is an Ideal boiler worth buying in the UK? Our 2025 review covers costs, reliability ratings, warranties, common problems, and alternatives.",
+    "Is an Ideal boiler worth buying in the UK? Our 2026 review covers costs, reliability ratings, warranties, common problems, and alternatives.",
 };
 
 export default function IdealBoilerReviewPage() {
@@ -57,7 +57,7 @@ export default function IdealBoilerReviewPage() {
       <main>
         <article className="mx-auto w-full max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
           <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl" style={{ color: "#1E3A5F" }}>
-            Ideal Boiler Review UK 2025: Pros, Cons & Reliability
+            Ideal Boiler Review UK 2026: Pros, Cons & Reliability
           </h1>
           <p className="mt-4 text-lg leading-7 text-slate-600">
             Ideal is a major boiler brand in the UK market, often positioned as a strong value option

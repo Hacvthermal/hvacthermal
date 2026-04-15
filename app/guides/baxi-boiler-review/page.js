@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Baxi Boiler Review UK 2025: Are They Any Good? | HVACThermal",
+  title: "Baxi Boiler Review UK 2026: Are They Any Good? | HVACThermal",
   description:
-    "Honest Baxi boiler review for UK homeowners. Covers reliability, costs, warranties, common faults, and whether Baxi is worth buying in 2025.",
+    "Honest Baxi boiler review for UK homeowners. Covers reliability, costs, warranties, common faults, and whether Baxi is worth buying in 2026.",
 };
 
 export default function BaxiBoilerReviewPage() {
@@ -57,7 +57,7 @@ export default function BaxiBoilerReviewPage() {
       <main>
         <article className="mx-auto w-full max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
           <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl" style={{ color: "#1E3A5F" }}>
-            Baxi Boiler Review UK 2025: Are They Any Good?
+            Baxi Boiler Review UK 2026: Are They Any Good?
           </h1>
           <p className="mt-4 text-lg leading-7 text-slate-600">
             Baxi is a well-known UK boiler brand with a reputation for offering good value across
@@ -81,7 +81,7 @@ export default function BaxiBoilerReviewPage() {
 
           <section className="mt-12">
             <h2 className="text-2xl font-bold tracking-tight" style={{ color: "#1E3A5F" }}>
-              Costs and Value in 2025
+              Costs and Value in 2026
             </h2>
             <p className="mt-4 text-slate-600 leading-7">
               The boiler-only price is only part of the story. Installed cost varies with boiler type,

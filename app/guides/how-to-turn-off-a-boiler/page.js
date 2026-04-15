@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "How to Turn Off a Boiler: UK Guide 2025 | HVACThermal",
+  title: "How to Turn Off a Boiler: UK Guide 2026 | HVACThermal",
   description:
     "Need to turn off your boiler? Step-by-step guide covering how to safely switch off combi, system and conventional boilers in UK homes.",
 };
@@ -61,7 +61,7 @@ export default function HowToTurnOffABoilerPage() {
       <main>
         <article className="mx-auto w-full max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
           <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl" style={{ color: "#1E3A5F" }}>
-            How to Turn Off a Boiler: UK Guide 2025
+            How to Turn Off a Boiler: UK Guide 2026
           </h1>
           <p className="mt-4 text-lg leading-7 text-slate-600">
             Sometimes you need to switch your boiler off—during a holiday, when doing DIY, if you’ve

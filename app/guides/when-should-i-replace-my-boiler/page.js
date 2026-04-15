@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "When Should I Replace My Boiler? UK Guide 2025 | HVACThermal",
+  title: "When Should I Replace My Boiler? UK Guide 2026 | HVACThermal",
   description:
     "Not sure if you need a new boiler? Find out the key signs your boiler needs replacing and whether repair or replacement makes more sense.",
 };

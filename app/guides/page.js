@@ -185,7 +185,7 @@ const GUIDE_CARDS = [
     ),
   },
   {
-    title: "Smart Thermostats UK (2025)",
+    title: "Smart Thermostats UK (2026)",
     desc: "Are smart thermostats worth it in the UK? Costs, realistic energy savings, and what to know about Nest and Hive.",
     href: "/guides/smart-thermostat-uk",
     icon: (
@@ -700,7 +700,7 @@ const GUIDE_CARDS = [
     ),
   },
   {
-    title: "Gas Boiler Ban UK: What It Means (2025)",
+    title: "Gas Boiler Ban UK: What It Means (2026)",
     desc: "The UK gas boiler ban explained: timeline, what it means for homeowners, and alternatives like heat pumps.",
     href: "/guides/gas-boiler-ban-uk",
     icon: (
@@ -721,7 +721,7 @@ const GUIDE_CARDS = [
     ),
   },
   {
-    title: "Home Energy Efficiency UK (2025)",
+    title: "Home Energy Efficiency UK (2026)",
     desc: "Practical ways to make your home more energy efficient: insulation, controls, grants, and quick wins.",
     href: "/guides/home-energy-efficiency-uk",
     icon: (
@@ -847,7 +847,7 @@ const GUIDE_CARDS = [
     ),
   },
   {
-    title: "Boiler Grants UK (2025)",
+    title: "Boiler Grants UK (2026)",
     desc: "Guide to boiler grants and funded schemes in the UK, including ECO4 and how to apply safely.",
     href: "/guides/boiler-grant-uk",
     icon: (

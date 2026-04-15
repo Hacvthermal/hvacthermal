@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Boiler Grants UK 2025: Free & Funded Boiler Schemes | HVACThermal",
+  title: "Boiler Grants UK 2026: Free & Funded Boiler Schemes | HVACThermal",
   description:
     "Could you get a free or subsidised boiler in the UK? Complete guide to boiler grants including ECO4, the Warm Home Discount, and how to apply.",
 };
@@ -57,14 +57,14 @@ export default function BoilerGrantUkPage() {
       <main>
         <article className="mx-auto w-full max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
           <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl" style={{ color: "#1E3A5F" }}>
-            Boiler Grants UK 2025: Free & Funded Boiler Schemes
+            Boiler Grants UK 2026: Free & Funded Boiler Schemes
           </h1>
           <p className="mt-4 text-lg leading-7 text-slate-600">
             If your boiler is old, unreliable, or expensive to run, you may be able to get support
             through UK schemes that fund heating and energy efficiency improvements. Some households
             can qualify for heavily subsidised (and in some cases free) upgrades through energy
             supplier obligations and local programmes. This guide explains the main boiler grant
-            routes people commonly ask about in 2025, how eligibility generally works, and how to
+            routes people commonly ask about in 2026, how eligibility generally works, and how to
             apply safely.
           </p>
 

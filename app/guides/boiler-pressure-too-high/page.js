@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Boiler Pressure Too High? How to Fix It UK Guide 2025 | HVACThermal",
+  title: "Boiler Pressure Too High? How to Fix It UK Guide 2026 | HVACThermal",
   description:
     "Boiler pressure too high? Find out why it happens, how to safely reduce it yourself, and when you need to call an engineer.",
 };

@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Smart Thermostats UK: Are They Worth It? 2025 Guide | HVACThermal",
+  title: "Smart Thermostats UK: Are They Worth It? 2026 Guide | HVACThermal",
   description:
     "Are smart thermostats worth it in the UK? We cover costs, energy savings, top brands like Nest and Hive, and whether one is right for your home.",
 };
@@ -61,7 +61,7 @@ export default function SmartThermostatUkPage() {
       <main>
         <article className="mx-auto w-full max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
           <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl" style={{ color: "#1E3A5F" }}>
-            Smart Thermostats UK: Are They Worth It? 2025 Guide
+            Smart Thermostats UK: Are They Worth It? 2026 Guide
           </h1>
           <p className="mt-4 text-lg leading-7 text-slate-600">
             A smart thermostat can make your heating easier to control and, in the right home, help

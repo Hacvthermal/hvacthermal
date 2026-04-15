@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Boiler Error Codes Explained: UK Guide 2025 | HVACThermal",
+  title: "Boiler Error Codes Explained: UK Guide 2026 | HVACThermal",
   description:
     "What do boiler error codes mean? Complete UK guide covering the most common fault codes for Worcester Bosch, Vaillant, Baxi, and more.",
 };

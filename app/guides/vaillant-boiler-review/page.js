@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Vaillant Boiler Review UK 2025: Pros, Cons & Costs | HVACThermal",
+  title: "Vaillant Boiler Review UK 2026: Pros, Cons & Costs | HVACThermal",
   description:
     "Thinking about a Vaillant boiler? Our UK review covers reliability, prices, warranties, common problems, and how Vaillant compares to Worcester Bosch.",
 };
@@ -57,7 +57,7 @@ export default function VaillantBoilerReviewPage() {
       <main>
         <article className="mx-auto w-full max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
           <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl" style={{ color: "#1E3A5F" }}>
-            Vaillant Boiler Review UK 2025: Pros, Cons & Costs
+            Vaillant Boiler Review UK 2026: Pros, Cons & Costs
           </h1>
           <p className="mt-4 text-lg leading-7 text-slate-600">
             Vaillant is a premium-leaning boiler brand in the UK, often praised for build quality,
@@ -96,7 +96,7 @@ export default function VaillantBoilerReviewPage() {
 
           <section className="mt-12">
             <h2 className="text-2xl font-bold tracking-tight" style={{ color: "#1E3A5F" }}>
-              Costs: What You’ll Pay in 2025
+              Costs: What You’ll Pay in 2026
             </h2>
             <p className="mt-4 text-slate-600 leading-7">
               Installed cost depends on boiler type (combi/system/regular), kW output, and how much

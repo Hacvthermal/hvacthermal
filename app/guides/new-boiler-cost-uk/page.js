@@ -1,9 +1,9 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "New Boiler Cost UK 2025: Full Price Guide | HVACThermal",
+  title: "New Boiler Cost UK 2026: Full Price Guide | HVACThermal",
   description:
-    "How much does a new boiler cost in the UK? Complete 2025 price guide covering combi, system and conventional boilers, labour costs, and money-saving tips.",
+    "How much does a new boiler cost in the UK? Complete 2026 price guide covering combi, system and conventional boilers, labour costs, and money-saving tips.",
 };
 
 export default function NewBoilerCostUKPage() {
@@ -76,11 +76,11 @@ export default function NewBoilerCostUKPage() {
             className="text-3xl font-extrabold tracking-tight sm:text-4xl"
             style={{ color: "#1E3A5F" }}
           >
-            New Boiler Cost UK 2025: Full Price Guide
+            New Boiler Cost UK 2026: Full Price Guide
           </h1>
           <p className="mt-4 text-lg leading-7 text-slate-600">
             Replacing your boiler is one of the biggest home improvements
-            you&apos;ll make. This guide gives you 2025 UK prices for a new
+            you&apos;ll make. This guide gives you 2026 UK prices for a new
             boiler supply and fit, so you can budget and compare quotes with
             confidence.
           </p>

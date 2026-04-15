@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Gas Boiler Ban UK: What It Means for Homeowners 2025 | HVACThermal",
+  title: "Gas Boiler Ban UK: What It Means for Homeowners 2026 | HVACThermal",
   description:
     "What is the UK gas boiler ban? Find out the timeline, what it means for your home, and what alternatives like heat pumps are available.",
 };

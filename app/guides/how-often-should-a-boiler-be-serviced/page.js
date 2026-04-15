@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "How Often Should a Boiler Be Serviced? UK Guide 2025 | HVACThermal",
+  title: "How Often Should a Boiler Be Serviced? UK Guide 2026 | HVACThermal",
   description:
     "Find out how often you should service your boiler, why it matters, and what happens if you skip it. Essential guide for UK homeowners.",
 };

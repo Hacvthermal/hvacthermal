@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "How to Improve Home Energy Efficiency UK: 2025 Guide | HVACThermal",
+  title: "How to Improve Home Energy Efficiency UK: 2026 Guide | HVACThermal",
   description:
     "Practical ways to make your home more energy efficient in the UK. Covers insulation, heating controls, grants, and quick wins to cut bills.",
 };

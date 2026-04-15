@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Boiler Cover UK: Is It Worth It? 2025 Guide | HVACThermal",
+  title: "Boiler Cover UK: Is It Worth It? 2026 Guide | HVACThermal",
   description:
     "Is boiler cover worth it in the UK? We compare the costs, what's included, top providers, and whether you're better off self-insuring.",
 };

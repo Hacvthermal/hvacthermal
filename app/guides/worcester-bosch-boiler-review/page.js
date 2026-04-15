@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "Worcester Bosch Boiler Review UK 2025: Are They Worth It? | HVACThermal",
+  title: "Worcester Bosch Boiler Review UK 2026: Are They Worth It? | HVACThermal",
   description:
     "Is Worcester Bosch the best boiler brand in the UK? Our honest review covers reliability, costs, warranties, and how they compare to rivals.",
 };
@@ -57,7 +57,7 @@ export default function WorcesterBoschBoilerReviewPage() {
       <main>
         <article className="mx-auto w-full max-w-3xl px-4 py-12 sm:px-6 sm:py-16">
           <h1 className="text-3xl font-extrabold tracking-tight sm:text-4xl" style={{ color: "#1E3A5F" }}>
-            Worcester Bosch Boiler Review UK 2025: Are They Worth It?
+            Worcester Bosch Boiler Review UK 2026: Are They Worth It?
           </h1>
           <p className="mt-4 text-lg leading-7 text-slate-600">
             Worcester Bosch is one of the most popular boiler brands in the UK, often associated

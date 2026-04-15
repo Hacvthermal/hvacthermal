@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "How Long Does a Boiler Last? UK Lifespan Guide 2025 | HVACThermal",
+  title: "How Long Does a Boiler Last? UK Lifespan Guide 2026 | HVACThermal",
   description:
     "Find out how long a boiler should last, signs it needs replacing, and when to repair vs replace. Practical advice for UK homeowners.",
 };

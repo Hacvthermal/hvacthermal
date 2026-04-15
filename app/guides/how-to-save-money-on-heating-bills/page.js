@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "How to Save Money on Heating Bills: UK Guide 2025 | HVACThermal",
+  title: "How to Save Money on Heating Bills: UK Guide 2026 | HVACThermal",
   description:
     "Simple and effective ways to reduce your heating bills in the UK. Covers boiler settings, insulation, smart thermostats, and government grants.",
 };

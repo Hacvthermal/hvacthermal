@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 export const metadata = {
-  title: "What Is a System Boiler? UK Guide 2025 | HVACThermal",
+  title: "What Is a System Boiler? UK Guide 2026 | HVACThermal",
   description:
     "Everything UK homeowners need to know about system boilers — how they work, pros and cons, costs, and whether one is right for your home.",
 };
