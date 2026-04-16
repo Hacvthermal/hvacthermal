@@ -7,6 +7,16 @@ const calculatorPaths = [
 ];
 
 const guidePaths = [
+  "/guides/boiler-not-working",
+  "/guides/no-hot-water",
+  "/guides/boiler-leaking",
+  "/guides/pilot-light-keeps-going-out",
+  "/guides/boiler-lockout",
+  "/guides/thermostatic-radiator-valves",
+  "/guides/power-flush-central-heating",
+  "/guides/magnetic-filter-boiler",
+  "/guides/boiler-service-what-to-expect",
+  "/guides/cold-radiators-hot-boiler",
   "/guides/boiler-installation-uk",
   "/guides/worcester-bosch-boiler-review",
   "/guides/vaillant-boiler-review",
