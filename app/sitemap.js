@@ -58,6 +58,7 @@ const guidePaths = [
   "/guides/boiler-service-what-to-expect",
   "/guides/cold-radiators-hot-boiler",
   "/guides/boiler-installation-uk",
+  "/guides/boiler-installation-time-uk",
   "/guides/worcester-bosch-boiler-review",
   "/guides/vaillant-boiler-review",
   "/guides/baxi-boiler-review",

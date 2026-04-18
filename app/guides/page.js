@@ -1813,6 +1813,27 @@ const GUIDE_CARDS = [
     ),
   },
   {
+    title: "How Long Does Boiler Installation Take? UK Guide 2026",
+    desc: "Typical UK installation times for combi, system and conventional boilers, plus what extends the job.",
+    href: "/guides/boiler-installation-time-uk",
+    icon: (
+      <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" aria-hidden="true">
+        <path
+          d="M7 3h10a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2Z"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M9 7h6M9 11h6M9 15h4"
+          stroke="currentColor"
+          strokeWidth="1.7"
+          strokeLinecap="round"
+        />
+      </svg>
+    ),
+  },
+  {
     title: "Worcester Bosch Boiler Review",
     desc: "UK review covering Worcester Bosch reliability, costs, warranties, and how they compare to rivals.",
     href: "/guides/worcester-bosch-boiler-review",
